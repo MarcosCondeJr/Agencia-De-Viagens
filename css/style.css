@@ -1,0 +1,28 @@
+body {
+    padding: 1rem;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    justify-content: start;
+    margin-left: 15px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 15;
+}
+
+header {
+    align-items: center;
+}
+
+li {
+    padding: 20px;
+}
