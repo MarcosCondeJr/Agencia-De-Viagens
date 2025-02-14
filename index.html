@@ -32,7 +32,46 @@
         </div>
         <div class="container-retangulo">
             <div class="retangulo-form">
-    
+                <div class="form-passagens">
+                    <form action="#">
+                        <div class="form-header">
+                            <div class="titulo">
+                                <h2>Passagens</h2>
+                            </div>
+                            <div class="tipo-viagem">
+                                <div class="row-tipo">
+                                    <input type="radio" name="radio_ida" id="radio_ida">
+                                    <label for="radio_ida">Somente Ida</label>
+                                </div>
+                                <div class="row-tipo">
+                                    <input type="radio" name="radio_ida_volta" id="radio_ida_volta">
+                                    <label for="radio_ida_volta">Ida e Volta</label>
+                                </div>
+                            </div>
+                            <div class="input-grupo">
+                                <div class="row-input">
+                                    <label for="origem">Origem</label>
+                                    <input type="text" name="origem" id="origem" placeholder="Digite sua origem">
+                                </div>
+                                <div class="row-input">
+                                    <label for="destino">Destino</label>
+                                    <input type="text" name="destino" id="destino" placeholder="Digite seu destino">
+                                </div>
+                                <div class="row-input">
+                                    <label for="destino">Ida</label>
+                                    <input type="date" name="data_ida" id="data_ida">
+                                </div>
+                                <div class="row-input">
+                                    <label for="destino">Volta</label>
+                                    <input type="date" name="data_volta" id="data_volta">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-buscar">
+                            <button>Buscar</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
