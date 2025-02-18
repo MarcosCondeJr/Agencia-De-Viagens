@@ -19,10 +19,22 @@ body {
 
 /* Estilização da nav bar */
 header {
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 99%;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0px 100px;
+    padding: 0 10px; /* Fabio */
+    /* margin: 0px 100px; */
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    height: 60px; /* ajusta o tamanho da header */
+    top: 0; 
 }
 
 .logo a {
@@ -32,6 +44,11 @@ header {
 
 .logo{
     justify-content: start;
+    margin-left: 70px;
+}
+
+.nav-bar {
+    margin-right: 80px;
 }
 
 ul {
@@ -44,7 +61,7 @@ li a {
     align-items: center;
     text-decoration: none;
     color: var(--azul-principal);
-    padding: 6px 15px;
+    padding: 6px 12px;
     font-weight: 500;
     margin-right: 10px;
 }
@@ -112,7 +129,7 @@ li a:hover {
 }
 
 .retangulo-form {
-    position: relative;
+    /* position: relative; */
     width: 900px;
     height: 300px ;
     margin-top: 130px;
