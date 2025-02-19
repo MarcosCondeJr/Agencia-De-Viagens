@@ -296,10 +296,15 @@ input::placeholder {
 
 .cards img {
     width: 100%;
+    height: 160px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 .conteudo-card h2{
-    font-size: 20px;
+    font-size: 16px;
+}
+
+.conteudo-card p{
+    text-align: justify;
 }
