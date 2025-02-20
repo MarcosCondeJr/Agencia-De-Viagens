@@ -9,14 +9,19 @@
     --fonte: "Montserrat", serif;
 }
 
+
 body {
     font-family: var(--fonte);
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+main{    
+    flex: 1;
 }
 
 /* Estilização da nav bar */
@@ -261,7 +266,7 @@ input::placeholder {
 /* Cards */
 .container-card {
     width: 100%;
-    height: 350px;
+    min-height: 350px;
     margin: 0px 30px;
 }
 .texto-separador {
@@ -299,7 +304,7 @@ input::placeholder {
     outline-offset: -1px; /* Move a borda para dentro */
     transition: 0.3s ease-out;
     margin: 20px 20px;
-    /* outline: none;*/  /*Desabilita a borda antes do hover */
+    outline: none;  /*Desabilita a borda antes do hover */
     text-align: left;
     overflow: visible;
 }
@@ -333,4 +338,37 @@ input::placeholder {
     width: 100%;
     height: 47%;
     text-align: justify;
+}
+
+.rodape{
+    background-color:var(--azul-principal);
+    color: white;
+    width: 100%;
+    text-align: justify;
+    margin-top: auto;
+    padding: 20px;
+}
+
+.menus-rodape {
+    display: flex;
+    /* justify-content:; */
+    z-index: -1;
+}
+
+.menu-rodape{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-rodape ul {
+    display: block;
+}
+
+.menu-rodape h3{
+    /* text-align: center; */
+}
+
+.rodape p{
+    text-align: center;
 }
