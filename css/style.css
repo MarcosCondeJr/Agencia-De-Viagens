@@ -30,12 +30,13 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 10px; /* Fabio */
+    z-index: 1000;
     /* margin: 0px 100px; */
 
     left: 50%;
     transform: translateX(-50%);
 
-    height: 60px; /* ajusta o tamanho da header */
+    height: 60px;
     top: 0; 
 }
 
@@ -283,17 +284,31 @@ input::placeholder {
 .cards {
     display: flex;
     justify-content: center;
+    z-index: -1;
 }
 
 .row-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
     background-color: var();
     width: 350px;
-    height: 390px;
+    height: 320px;
     border-radius: 10px;
-    /* border: #333 0.2px solid; */
-    margin: 15px 20px;
+    outline: 1px solid var(--azul-principal); /* Cria a borda sem afetar a imagem */
+    outline-offset: -1px; /* Move a borda para dentro */
+    transition: 0.3s ease-out;
+    margin: 20px 20px;
+    /* outline: none;*/  /*Desabilita a borda antes do hover */
     text-align: left;
-    /* box-shadow: 4px 4px 12px var(--azul-complemento); */
+    overflow: visible;
+}
+
+.row-card:hover {
+    outline: 2px solid var(--azul-secundaria);
+    outline-offset: -1px;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 15);
+    transform: scale(1.1);
 }
 
 .cards img {
@@ -301,6 +316,12 @@ input::placeholder {
     height: 160px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    z-index: 1;
+}
+
+.conteudo-card {
+    margin: 2px 15px 0 15px;
+    flex-grow: 1;
 }
 
 .conteudo-card h2{
@@ -308,17 +329,8 @@ input::placeholder {
 }
 
 .conteudo-card p{
+    font-size: 13px;
+    width: 100%;
+    height: 47%;
     text-align: justify;
-}
-
-footer {
-    background-color:var(--azul-principal);
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-.rodape {
-    display: flex;
-    align-items: end;
 }
