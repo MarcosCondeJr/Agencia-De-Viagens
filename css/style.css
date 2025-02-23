@@ -51,12 +51,12 @@ header {
 }
 
 .logo{
-    justify-content: start;
-    margin-left: 70px;
+    justify-content: start; 
+    margin-left: 30px;
 }
 
 .nav-bar {
-    margin-right: 80px;
+    margin-right: 10px;
 }
 
 ul {
