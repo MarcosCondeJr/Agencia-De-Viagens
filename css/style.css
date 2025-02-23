@@ -382,14 +382,9 @@ input::placeholder {
     color: white;
 }
 
-/* footer {
-    background-color: var(--azul-principal);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-    margin-top: auto;
-} */
+footer {
+    margin-top: 10px;
+}
 
 .rodape{
     background-color:var(--azul-principal);
@@ -397,12 +392,11 @@ input::placeholder {
     width: 100%;
     text-align: justify;
     margin-top: auto;
-    padding: 20px;
+    padding: 10px;
 }
 
 .menus-rodape {
     display: flex;
-    /* justify-content:; */
     z-index: -1;
 }
 
@@ -414,10 +408,6 @@ input::placeholder {
 
 .menu-rodape ul {
     display: block;
-}
-
-.menu-rodape h3{
-    /* text-align: center; */
 }
 
 .rodape p{
