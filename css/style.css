@@ -469,6 +469,52 @@ input::placeholder {
     color: white;
 }
 
+/* Estilizando os feedbacks*/
+.separador-feedbakcs {
+    display: flex;
+    justify-content: center;
+}
+
+.separador-feedbakcs h3::after {
+    content: '';
+    display: block;
+    background-color: var(--laranja-efeitos);
+    width: 6.6rem;
+    height: 0.2rem;
+    margin: 0 auto;
+    margin-top: 2px;
+    border-radius: 2px;
+    position: absolute;
+}
+
+.container-feedbacks {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row-container-feedback {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row-feedbacks {
+    margin: 10px;
+    width: 500px;
+    height: 180px;
+    border: #333 1px solid;
+    border-radius: 20px;
+}
+
+.conteudo-feedback {
+    align-items: flex-end;
+    text-align: justify;
+    margin: 15px;
+}
+
 /* Rodapé */
 footer {
     margin-top: 10px;
