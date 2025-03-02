@@ -123,8 +123,10 @@ li a:hover {
     position: absolute;
     margin: 0;
     width: 100%;
-    height: auto;
+    height: 348px;
+    /* height: auto; */
     z-index: -1;
+    background-color: var(--azul-complemento);
 }
 
 .container {
@@ -265,6 +267,8 @@ input::placeholder {
 
 /* Cards */
 .container-card {
+    /* border-radius: 20px; */
+    /* background-color: white; */
     width: 100%;
     min-height: 350px;
     margin: 0px 30px;
@@ -303,7 +307,7 @@ input::placeholder {
     outline: 1px solid var(--azul-principal); /* Cria a borda sem afetar a imagem */
     outline-offset: -1px; /* Move a borda para dentro */
     transition: 0.3s ease-out;
-    margin: 20px 20px;
+    margin: 20px 25px;
     outline: none;  /*Desabilita a borda antes do hover */
     text-align: left;
     overflow: visible;
