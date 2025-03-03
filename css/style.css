@@ -492,9 +492,22 @@ input::placeholder {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
-.row-container-feedback {
+.row-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-container-feedback-1 {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row-container-feedback-2 {
     margin-top: 10px;
     display: flex;
     flex-direction: row;
@@ -502,9 +515,9 @@ input::placeholder {
 }
 
 .row-feedbacks {
-    margin: 10px;
-    width: 500px;
-    height: 180px;
+    margin: 20px;
+    width: 450px;
+    height: 200px;
     border: #333 1px solid;
     border-radius: 20px;
 }
@@ -512,9 +525,12 @@ input::placeholder {
 .conteudo-feedback {
     align-items: flex-end;
     text-align: justify;
-    margin: 15px;
+    margin: 20px;
 }
 
+.conteudo-feedback p{
+    font-size: 14px;
+}
 /* Rodapé */
 footer {
     margin-top: 10px;
