@@ -18,7 +18,7 @@
         <div class="nav-bar">
             <nav>
                 <ul>
-                    <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
                     <li><a href="#"><i class="fa-solid fa-question-circle"></i>Ajuda</a></li>
                     <li class="dropdown">
                         <a href="#"><i class="fa-solid fa-bed"></i>Serviços ▾</a>
@@ -29,7 +29,7 @@
                         </ul>
                     </li>
                     <li><a href="#"><i class="fa-solid fa-suitcase"></i>Minhas Viagens</a></li>
-                    <li><a href="#"><i class="fa-solid fa-user"></i>Fazer Login</a></li>
+                    <li><a href="login.html"><i class="fa-solid fa-user"></i>Fazer Login</a></li>
                 </ul>
             </nav>
         </div>
@@ -40,8 +40,8 @@
         <!-- <div>
             <img class="img-background" src="assets/images/imagem_principal.jpg" alt="">
         </div> -->
-        <div>
-            <img class="imagem-principal" src="assets/images/background.jpg" alt="propagandas">
+        <div class="imagem-principal">
+            <img class="imagem-principal" src="assets/images/imagem-fundo.png" alt="propagandas">
         </div>
         <div class="container">
             <div class="retangulo-form">
@@ -130,7 +130,7 @@
                                     <span class="label">Pacotes em até</span>
                                     <span>R$ 389,90</span>
                                 </div>
-                                <button>Ver Mais</button>
+                                <button><a href="verMais.html">Ver Mais</a></button>
                             </div>
                         </div>
                     </div>
@@ -213,35 +213,116 @@
                 <div class="separador">
                     <h3>Viagens Internacionais</h3>
                 </div>
-                <div class="img-viagens-1" style="background-image: url(assets/images/Paris-França.jpg);">
-                    <div class="conteudo-viagens">
-                        <h1>Paris</h1>
-                        <p>França</p>
-                        <!-- <span class="label">Pacotes em até</span><br>
-                        <span>R$ 389,90</span> -->
-                    </div>
-                    <div class="button-viagens">
-                        <button>Ver Mais</button>
-                    </div>
-                </div>
-                <div class="img-viagens-2" style="background-image: url(assets/images/madri-espanha.jpg);">
-                    <div class="conteudo-viagens">
-                        <h1>Madrid</h1>
-                        <p>Espanha</p>
-                        <!-- <span class="label">Pacotes em até</span><br>
-                        <span>R$ 389,90</span> -->
-                    </div>
-                    <div class="button-viagens">
-                        <button>Ver Mais</button>
-                    </div>
+                <div class="slider">
+                    <figure>
+                        <div class="slide img-viagens-1" style="background-image: url(assets/images/Paris-França.jpg);">
+                            <div class="conteudo-viagens">
+                                <h1>Paris</h1>
+                                <p>França</p>
+                            </div>
+                            <div class="button-viagens">
+                                <button>Ver Mais</button>
+                            </div>
+                        </div>
+                        <div class="slide img-viagens-2" style="background-image: url(assets/images/madri-espanha2.jpg);">
+                            <div class="conteudo-viagens">
+                                <h1>Madrid</h1>
+                                <p>Espanha</p>
+                            </div>
+                            <div class="button-viagens">
+                                <button>Ver Mais</button>
+                            </div>
+                        </div>
+                        <div class="slide img-viagens-3" style="background-image: url(assets/images/praias-caribe-capa.jpg);">
+                            <div class="conteudo-viagens">
+                                <h1>Cayos Holandeses, San Blas</h1>
+                                <p>Panamá</p>
+                            </div>
+                            <div class="button-viagens">
+                                <button>Ver Mais</button>
+                            </div>
+                        </div>
+                    </figure>
                 </div>
             </div>
+            
             <div class="container-feedbacks">
-                <hr>
-                <div class="row-feedbacks">
+                <hr width="100%">
+                <div class="separador-feedbakcs">
                     <h3>Feedbacks</h3>
                 </div>
-            </div>
+                <div class="row-container">
+                    <div class="row-container-feedback-1">
+                        <div class="row-feedbacks">
+                            <div class="conteudo-feedback">
+                                <h3><i class="fa-solid fa-user-circle"></i>  Marcos Conde</h3>
+                                <p>Atendimento excelente! A equipe foi super atenciosa e tirou todas as minhas dúvidas. A viagem correu sem nenhum problema. Recomendo!</p>
+                                <i class="fa-solid fa-star" style="color: gold;"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="row-feedbacks">
+                            <div class="conteudo-feedback">
+                                <h3><i class="fa-solid fa-user-circle"></i>  Wesley Saless</h3>
+                                <p>Tive uma experiência incrível com essa agência! Tudo foi muito bem organizado, desde a compra das passagens até as acomodações. Mal posso esperar para viajar com vocês novamente!</p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="row-feedbacks">
+                            <div class="conteudo-feedback">
+                                <h3><i class="fa-solid fa-user-circle"></i>  Mauri Volpato</h3>
+                                <p>Gostei do serviço, mas o tempo de resposta às minhas dúvidas foi um pouco demorado. No fim, deu tudo certo, mas poderia ser mais ágil</p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-container-feedback-2">
+                        <div class="row-feedbacks">
+                            <div class="conteudo-feedback">
+                                <h3><i class="fa-solid fa-user-circle"></i>  Marcos Conde</h3>
+                                <p>Atendimento excelente! A equipe foi super atenciosa e tirou todas as minhas dúvidas. A viagem correu sem nenhum problema. Recomendo!</p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="row-feedbacks">
+                            <div class="conteudo-feedback">
+                                <h3><i class="fa-solid fa-user-circle"></i>  Wesley Saless</h3>
+                                <p>Tive uma experiência incrível com essa agência! Tudo foi muito bem organizado, desde a compra das passagens até as acomodações. Mal posso esperar para viajar com vocês novamente!</p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="row-feedbacks">
+                            <div class="conteudo-feedback">
+                                <h3><i class="fa-solid fa-user-circle"></i>  Mauri Volpato</h3>
+                                <p>Gostei do serviço, mas o tempo de resposta às minhas dúvidas foi um pouco demorado. No fim, deu tudo certo, mas poderia ser mais ágil</p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
     </main>
 
