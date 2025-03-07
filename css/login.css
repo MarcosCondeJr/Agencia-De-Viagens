@@ -186,25 +186,6 @@ img {
     background-color: var(--laranja-efeitos);
 }
 
-.button-cadastrar {
-    display: flex;
-    align-items: center;
-}
-
-.button-cadastrar button {
-    border: none;
-    background-color: var(--azul-principal);
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.button-cadastrar button:hover {
-    background-color: var(--azul-secundaria);
-
-}
-
 .row-input {
     display: flex;
     flex-direction: column;
@@ -242,11 +223,32 @@ img {
     border-radius: 5px;
     padding: 0.50rem;
     cursor: pointer;
+    font-size: 15px;
 }
 
 .button-entrar button:hover {
     background-color: var(--azul-principal);
     color: white;
+}
+
+.button-cadastrar {
+    margin-top: 10px;
+}
+
+.button-cadastrar button {
+    width: 100%;
+    border: none;
+    background-color: var(--azul-principal);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.button-cadastrar button:hover {
+    background-color: var(--azul-secundaria);
+
 }
 
 .form span a{
