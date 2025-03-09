@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" type="image/svg" href="assets/icons/plane-departure-solid-white.svg">
     <title>Travel Agency</title>
 </head>
 <body>
@@ -12,7 +13,7 @@
     <header>
         <div class="logo">
             <a href="#">
-                <h2>Travel Agency</h2>
+                <h2><i class="fa-solid fa-plane-departure"></i> Travel Agency</h2>
             </a>
         </div>
         <div class="nav-bar">
@@ -23,9 +24,9 @@
                     <li class="dropdown">
                         <a href="#"><i class="fa-solid fa-bed"></i>Serviços ▾</a>
                         <ul class="dropdown-menu">
+                            <li><a href="#Pacotes">Pacotes de Viagem</a></li>
                             <li><a href="#">hospedagem</a></li>
                             <li><a href="#">Aluguel de Carros</a></li>
-                            <li><a href="#Pacotes">Pacotes de Viagem</a></li>
                         </ul>
                     </li>
                     <li><a href="#"><i class="fa-solid fa-suitcase"></i>Minhas Viagens</a></li>
@@ -53,12 +54,16 @@
                             </div>
                             <div class="tipo-viagem">
                                 <div class="row-tipo">
-                                    <input type="radio" name="tipo_viagem" id="radio_ida">
+                                    <input type="radio" name="tipo_viagem" id="radio_ida" checked="checked">
                                     <label for="radio_ida">Somente Ida</label>
                                 </div>
                                 <div class="row-tipo">
                                     <input type="radio" name="tipo_viagem" id="radio_ida_volta">
                                     <label for="radio_ida_volta">Ida e Volta</label>
+                                </div>
+                                <div class="row-tipo">
+                                    <input type="radio" name="tipo_viagem" id="varios_destinos">
+                                    <label for="varios_destinos">Varios Destinios</label>
                                 </div>
                             </div>
                             <div class="input-grupo">
@@ -245,7 +250,15 @@
                     </figure>
                 </div>
             </div>
-            
+            <div class="container-aluguel">
+                <hr width="100%">
+                <div class="separador-feedbakcs">
+                    <h3>Aluguel de Carros</h3>
+                </div>
+                <div class="row-container-aluguel">
+                    <p>Confira abaixo algumas das nossas empresas parceiras e escolha a melhor opção para sua viagem:,</p>
+                </div>
+            </div>
             <div class="container-feedbacks">
                 <hr width="100%">
                 <div class="separador-feedbakcs">

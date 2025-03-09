@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" type="image/svg" href="assets/icons/plane-departure-solid-white.svg">
     <title>Faça Login Travel</title>
 </head>
 <body>
     <header>
         <div class="logo">
             <a href="#">
-                <h2>Travel Agency</h2>
+                <h2><i class="fa-solid fa-plane-departure"></i> Travel Agency</h2>
             </a>
         </div>
         <div class="nav-bar">
@@ -26,34 +27,46 @@
 
     <main>
         <div class="container-login">
-            <div class="form-imagem">
-                <img src="assets/images/imagem_login.jpg" alt="imagem-de-viagem">
-            </div>
             <div class="form">
                 <form action="#">
                     <div class="form-header">
                         <div class="titulo">
-                            <h1>Faça Login</h1>
-                        </div>
-                        <div class="button-cadastrar">
-                            <button>Cadastre-se</button>
+                            <h1>Login</h1>
                         </div>
                     </div>
                     <div class="input-grupo">
                         <div class="row-input">
                             <label for="email_login">Email</label>
-                            <input type="email" name="email_login">
+                            <input type="email" name="email_login" placeholder="Digite seu email">
                         </div>
                         <div class="row-input">
                             <label for="email_login">Senha</label>
-                            <input type="password" name="senha_login">
+                            <input type="password" name="senha_login" placeholder="Informe a senha">
                         </div>
                     </div>
                     <div class="button-entrar">
-                        <button>Entrar</button>
+                        <button>
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                            Entrar</button>
                     </div>
                     <span><a href="#">Esqueci a Senha</a></span>
+                    <div class="separador">
+                        <span>ou</span>
+                    </div>
+                    <div class="button-cadastrar">
+                        <button>
+                            <i class="fa-solid fa-user-plus"></i>
+                            Cadastre-se</button>
+                    </div>
                 </form>
+            </div>
+            <div class="texto-info">
+                <div class="texto">
+                    <h1>Viagens <br> em promoção</h1>
+                    <h3>pra você conhecer o Brasil e o mundo!</h3>
+                    <span>Pacotes a partir de</span>
+                    <span><b>R$ 589,00</b></span>
+                </div>
             </div>
         </div>
     </main>

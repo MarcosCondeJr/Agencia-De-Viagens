@@ -19,6 +19,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(../assets/images/tropical-beach-samoa.jpg);
+    background-size: cover; 
+    /* background-position: center; Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
 }
 
 main {
@@ -33,7 +37,7 @@ main {
 
 /* Estilização da nav bar */
 header {
-    background-color: var(--azul-principal);
+    /* background-color: var(--azul-principal); */
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     width: 90%;
@@ -43,6 +47,7 @@ header {
     justify-content: space-between;
     padding: 0 10px; 
     z-index: 1000;
+    border-bottom: 1px white solid;
 
     left: 50%;
     transform: translateX(-50%);
@@ -126,31 +131,51 @@ li a:hover {
 
 .container-login {
     margin-top: 20px;
-    width: 80%;
+    width: 70%;
     height: 85%;
     display: flex;
     border-radius: 20px;
-    /* background-color: #333; */
-    box-shadow: 0 1px 12px rgba(0, 0, 0, 15);
+    background-color: var(--laranja-efeitos);
+
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 15);
 }
 
-.form-imagam {
+.texto-info {
+    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: none; */
-    /* padding: 1rem; */
-    background-color: var(--azul-principal);
-    /* height: 100%; */
+    text-align: center;
+    width: 30%;
+    height: 1;
+    padding: 2rem;
 }
 
-img {
-    width: 100%;
-    height: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 2%;
+.texto-info .texto {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    padding: 15px;
+    justify-content: center;
+    width: 98%;
+    height: 98%;
+    border-radius: 10px;
+    border-right: 2px #fff solid;
+    border-top: 2px #fff solid;
+    border-bottom: 2px #fff solid;
+}
+
+.texto h1 {
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    color: var(--azul-complemento);
+}
+
+.texto h3 {
+    font-weight: 500;
 }
 
 .form {
@@ -161,21 +186,24 @@ img {
     flex-direction: column;
     background-color: #fff;
     padding: 2rem;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .form form {
-    width: 70%;
+    width: 65%;
     height: 100%;
 }
 
 .form-header {
-    margin-bottom: 3rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.form-header h1::after {
+.titulo h1 {
+    font-size: 35px;
+}
+
+/* .form-header h1::after {
     content: '';
     display: block;
     width: 4rem;
@@ -184,36 +212,17 @@ img {
     position: absolute;
     border-radius: 5px;
     background-color: var(--laranja-efeitos);
-}
-
-.button-cadastrar {
-    display: flex;
-    align-items: center;
-}
-
-.button-cadastrar button {
-    border: none;
-    background-color: var(--azul-principal);
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.button-cadastrar button:hover {
-    background-color: var(--azul-secundaria);
-
-}
+} */
 
 .row-input {
     display: flex;
     flex-direction: column;
-    margin-bottom: 0rem;
+    margin-top: 8px;
 }
 
 .row-input input {
-    margin: 1rem 0 ;
-    padding: 0.6rem 0.4rem;
+    margin-top: 12px;
+    padding: 0.8rem 0.8rem;
     border: #b3b3b3 1px solid;
     border-radius: 10px;
     /* box-shadow: 0px 0px 3px #333; */
@@ -237,16 +246,39 @@ img {
 .button-entrar button {
     width: 100%;
     margin-top: 1rem;
-    border: none;
+    border:  var(--laranja-efeitos) 1.5px solid;
     background-color: var(--laranja-efeitos);
     border-radius: 5px;
-    padding: 0.50rem;
+    padding: 0.60rem;
     cursor: pointer;
+    font-size: 15px;
 }
 
 .button-entrar button:hover {
+    border: var(--laranja-efeitos) 1.5px solid;
+    color: var(--laranja-efeitos);
+    background-color: transparent;
+}
+
+.button-cadastrar {
+    margin-top: 10px;
+}
+
+.button-cadastrar button {
+    width: 100%;
+    border: none;
     background-color: var(--azul-principal);
-    color: white;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.button-cadastrar button:hover {
+    border: var(--azul-principal) 1.5px solid;
+    color: var(--azul-principal);
+    background-color: transparent;
 }
 
 .form span a{
@@ -257,4 +289,26 @@ img {
     align-items: center;
     justify-content: center;
     margin-top: 5px;
+}
+
+.separador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.separador::before,
+.separador::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #5d5757;
+}
+
+.separador span {
+    color: #686868;
+    background: white;
+    padding: 0 12px;
 }
