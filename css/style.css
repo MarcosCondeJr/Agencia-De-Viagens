@@ -532,25 +532,35 @@ figure {
 /* Estilização Aluguel de Carros*/
 .container-aluguel {
     width: 100%;
-    height: 500px;
+    height: 400px;
     margin-top: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.row-card-aluguel {
+.card-container {
     width: 100%;
-    height: 400px;
+    height: 300px;
     display: flex;
     flex-direction: row;
-    gap: 5px;
     /* align-items: center; */
     justify-content: center;
 }
 
+.row-card-aluguel {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .card-aluguel {
     margin: 20px;
-    width: 350px;
-    height: 200px;
+    width: 320px;
+    height: 180px;
     border: #333 1px solid;
     border-radius: 20px;
     display: flex;
@@ -563,16 +573,24 @@ figure {
     width: 100px;
     height: 25px;
     border-radius: 20px;
-    margin-top: 10px;
     background-color: var(--azul-principal);
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: 5s;
 }
 
 .button-aluguel a {
     text-decoration: none;
     color: white;
+}
+
+.button-aluguel:hover {
+    /* background-color: white; */
+ 
+    box-shadow: 0 1px 12pxvar(--azul-secundaria);
+    border: 1px var(--azul-principal) solid;
+    transform: scale(1.1);
 }
 
 .imagem-aluguel-1 {
@@ -591,15 +609,18 @@ figure {
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; /* Evita que a imagem se repita */
+    z-index: -1;
 }
 
 .imagem-aluguel-3 {
     width: 100%;
     height: 100%;
-    background-image: url(../assets/images/logo_localiza.png);
+    background-image: url(../assets/images/logo_unidas.jpg);
     background-size: cover; 
     background-position: center; 
+
     background-repeat: no-repeat; /* Evita que a imagem se repita */
+    z-index: -1;
 }
 
 /* Estilização feedbacks*/
