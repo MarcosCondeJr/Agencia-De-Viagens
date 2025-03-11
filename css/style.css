@@ -511,11 +511,95 @@ figure {
     padding-right: 12px;
 }
 
+.button-viagens button {
+    border: var(--azul-principal) 2px solid;
+    background-color: var(--azul-principal);
+    padding: 1.0rem 1.8rem;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button-viagens button:hover {
+    border: white 2px solid;
+    background-color: transparent;
+    color: white;
+}
+
 /* Estilização Aluguel de Carros*/
 .container-aluguel {
     width: 100%;
-    height: 400px;
+    height: 500px;
     margin-top: 20px;
+    text-align: center;
+}
+
+.row-card-aluguel {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.card-aluguel {
+    margin: 20px;
+    width: 350px;
+    height: 200px;
+    border: #333 1px solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.button-aluguel {
+    width: 100px;
+    height: 25px;
+    border-radius: 20px;
+    margin-top: 10px;
+    background-color: var(--azul-principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-aluguel a {
+    text-decoration: none;
+    color: white;
+}
+
+.imagem-aluguel-1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/images/logo_localiza.png);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+.imagem-aluguel-2 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/images/MOVIDA.png.webp);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+.imagem-aluguel-3 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/images/logo_localiza.png);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
 }
 
 /* Estilização feedbacks*/
@@ -550,25 +634,6 @@ figure {
     70%, 100% { left: 0; }  
 }
 
-.button-viagens button {
-    border: var(--azul-principal) 2px solid;
-    background-color: var(--azul-principal);
-    padding: 1.0rem 1.8rem;
-    border-radius: 5px;
-    color: white;
-    font-size: 15px;
-    font-weight: 500;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.button-viagens button:hover {
-    border: white 2px solid;
-    background-color: transparent;
-    color: white;
-}
-
-/* Estilizando os feedbacks*/
 .separador-feedbakcs {
     display: flex;
     justify-content: center;
