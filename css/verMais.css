@@ -216,6 +216,7 @@ li a:hover {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-bottom: 15px;
 }
 
 .separador-hospedagem {
@@ -259,7 +260,7 @@ li a:hover {
 }
 
 .button-hotel a {
-    text-decoration: none; /* Remove o sublinhado */
+    text-decoration: none;
     color: var(--azul-secundaria);
 }
 
@@ -271,24 +272,62 @@ li a:hover {
 /* Rodapé */
 footer {
     width: 100%;
+    height: 80px;
     margin-top: 10px;
-
     background-color:var(--azul-principal);
     color: white;
 }
+
 .rodape{
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
-    width: 90%;
+    gap: 10px;
     text-align: justify;
     margin-top: auto;
 }
 
-.menus-rodape {
+.conatainer-rodape {
+    width: 100%;
     display: flex;
-    z-index: -1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contatos {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.icones-geral {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.menus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.sobre_nos {
+    text-align: left;
 }
 
 .menu-rodape{
@@ -304,3 +343,4 @@ footer {
 .rodape p{
     text-align: center;
 }
+
